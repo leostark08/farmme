@@ -37,14 +37,25 @@ $(document).ready(function () {
     var copyData = '';
     iconCopys.forEach(function (icon) {
         icon.addEventListener('click', () => {
-            copyData = icon.parentElement.getElementsByClassName('token')[0].innerText;
+            copyData = icon.parentElement.querySelector('.token').innerText;
             copyToClipboard(copyData);
-            icon.parentElement.getElementsByClassName('copied')[0].classList.add('active');
+            icon.parentElement.querySelector('.copied').classList.add('active');
             setTimeout(function () {
-                icon.parentElement.getElementsByClassName('copied')[0].classList.remove('active');
+                icon.parentElement.querySelector('.copied').classList.remove('active');
             }, 1000);
         });
     })
+
+    // navigation toggle
+    const navToggle = document.getElementById('toggle');
+    const navContainer = document.querySelector('.nav-container');
+    navToggle.addEventListener('click', function () {
+        navContainer.classList.add('active');
+    });
+    const closeToggle = document.getElementById('nav-close');
+    closeToggle.addEventListener('click', function () {
+        navContainer.classList.remove('active');
+    });
 });
 // copy to clipboard
 function copyToClipboard(text) {
