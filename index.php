@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css"
         integrity="sha512-g0BdMh4zEp4DuzHdoenUitpFx195QZfSFq5sd04kXZLwz5F9pUlGqwk+1jlvBBFGOnTCt0b5FsmQyl+5v2fxWw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Farmme</title>
 </head>
 
 <body>
@@ -56,8 +56,10 @@
     )
 
     ?>
-    <div class="fixed b-12">
+    <div class="fixed b-12 nav-container">
+        <button id="toggle">☰</button>
         <nav class="b-10 navigation">
+            <span id="nav-close">x</span>
             <a href="#" class="logo"><img src="images/logo.png" alt="Farmme Logo" width="90"></a>
             <?php
             foreach ($navItems as $item) {
@@ -123,7 +125,7 @@
                     </div>
                 </div>
                 <div class="b-7 news-frame frame">
-                    <!-- <img class="news-border" src="images/news-border.png" alt="News border"> -->
+                    <!-- <img class="border border--top" src="images/bottom-border.png" alt="News border"> -->
                     <div class="b-12 tab-container">
                         <div class="b-row labels">
                             <span class="b-4 tab-label active">News</span>
@@ -132,7 +134,7 @@
                         </div>
                         <div class="b-row contents">
                             <div class="b-12 tab-content active">
-                                <?php for ($i = 0; $i < 20; $i++) { ?>
+                                <?php for ($i = 0; $i < 10; $i++) { ?>
                                 <div class="news-item b-row">
                                     <span class="b-10 news__content">Lorem, ipsum dolor sit amet consectetur adipisicing
                                         elit.</span>
@@ -144,6 +146,7 @@
                             <div class="b-12 tab-content">COMMUNITY</div>
                         </div>
                     </div>
+                    <!-- <img class="border border--bottom" src="images/bottom-border.png" alt="News border"> -->
                 </div>
             </div>
         </div>
