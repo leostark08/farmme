@@ -66,7 +66,8 @@
                 echo ('<a class="nav-item" href="' . $item['href'] . '">' . $item['label'] . '</a>');
             }
             ?>
-            <a class="download-game" href="#"><img src="images/download-game.png" alt="Download game" width="120"></a>
+            <a class="download-game" href="bitfield"><img src="images/download-game.png" alt="Download game"
+                    width="120"></a>
         </nav>
     </div>
 

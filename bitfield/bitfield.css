@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.b-row {
+    display: flex;
+    width: 100%;
+}
+
+.b-1 {
+    width: calc(100% / 12);
+}
+.b-2 {
+    width: calc(100% / 6);
+}
+.b-3 {
+    width: calc(100% / 4);
+}
+.b-4 {
+    width: calc(100% / 3);
+}
+.b-5 {
+    width: calc(100% / 12 * 5);
+}
+.b-6 {
+    width: calc(100% / 2);
+}
+.b-7 {
+    width: calc(100% / 12 * 7);
+}
+.b-8 {
+    width: calc(100% / 3 * 2);
+}
+.b-9 {
+    width: calc(100% / 4 * 3);
+}
+.b-10 {
+    width: calc(100% / 6 * 5);
+}
+.b-11 {
+    width: calc(100% / 12 * 11);
+}
+.b-12 {
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 9998;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cb-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cb-item label {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+}
+.cb-item label span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ebf5fc;
+    color: #6a9bd8;
+    font-size: 18px;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+        3px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    margin: 0;
+}
+input[type="checkbox"]:checked ~ span {
+    transform: scale(0.95);
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+        inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cbs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cbs .cb-item {
+    flex-grow: 1;
+}
+
+input[type="submit"] {
+    width: 100px;
+    background-color: #49ad97;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    opacity: 0.7;
+}
+#checkArray {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+form > div {
+    margin-top: 15px;
+}
