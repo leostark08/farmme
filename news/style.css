@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "iCiel Pony";
+    src: url("fonts/iCiel-Pony.ttf");
+}
+:root {
+    --brown: #794821;
+    --aqua: #85ede4;
+    --orange: #efab17;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand";
+    font-size: 20px;
+    color: var(--brown);
+    margin-bottom: 500px;
+}
+.container {
+    margin: 50px 85px;
+}
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.justify-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.justify-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+}
+.align-start {
+    display: flex;
+    align-items: flex-start;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-1 {
+    width: calc(100% / 12);
+}
+.l-2 {
+    width: calc(100% / 6);
+}
+.l-3 {
+    width: calc(100% / 4);
+}
+.l-4 {
+    width: calc(100% / 3);
+}
+.l-5 {
+    width: calc(100% / 12 * 5);
+}
+.l-6 {
+    width: calc(100% / 2);
+}
+.l-7 {
+    width: calc(100% / 12 * 7);
+}
+.l-8 {
+    width: calc(100% / 3 * 2);
+}
+.l-9 {
+    width: calc(100% / 4 * 3);
+}
+.l-10 {
+    width: calc(100% / 6 * 5);
+}
+.l-11 {
+    width: calc(100% / 12 * 11);
+}
+.l-12 {
+    width: 100%;
+}
+.head {
+    width: 100%;
+}
+.head__title span {
+    font-family: "iCiel Pony";
+    color: var(--brown);
+    font-size: 50px;
+}
+.head__title string {
+    color: var(--orange);
+}
+
+.lang-switch a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--brown);
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: solid 1.5px var(--brown);
+    border-radius: 30px;
+    padding: 10px 20px 10px 15px;
+}
+
+#search {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--brown);
+}
+#search::placeholder {
+    color: var(--brown);
+    opacity: 0.5;
+}
+
+.search-box::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    background-image: url("images/ic-search.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.post,
+.statistic,
+.categories {
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--orange);
+}
+.post > * {
+    width: 48%;
+}
+.post .author {
+    font-size: 15px;
+    font-weight: bold;
+}
+.post .title {
+    font-size: 55px;
+    font-family: "iCiel Pony";
+}
+.post .create-time {
+    font-size: 15px;
+}
+.subs .btn-see-more {
+    background-color: #fff;
+    height: 30px;
+    font-size: 15px;
+    border: solid 3px var(--orange);
+    border-radius: 30px;
+    color: var(--brown);
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.subs .btn-play {
+    width: 30px;
+    height: 30px;
+    border: solid 3px var(--orange);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+.subs .btn-see-more:hover,
+.subs .btn-play:hover {
+    background-color: #efab1751;
+    transition: all 0.3s;
+}
+.subs .btn-play img {
+    width: 12px;
+    height: 12px;
+}
+
+.statistic .amount {
+    font-family: "iCiel Pony";
+    font-size: 96px;
+    color: var(--orange);
+}
+.statistic .label {
+    font-size: 24px;
+}
+
+.statistic .unit {
+    font-size: 32px;
+}
+
+.category {
+    width: 22%;
+}
+
+.category .category__title {
+    font-size: 32px;
+    font-family: "iCiel Pony";
+    margin: 15px 0;
+    height: 100px;
+}
+.category .category__description {
+    font-size: 18px;
+}
+
+.filter-buttons button {
+    background-color: var(--brown);
+    border-radius: 30px;
+    color: var(--orange);
+    border: none;
+    width: 175px;
+    height: 36px;
+    font-size: 20;
+    font-family: "iCiel Pony";
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.filter-buttons button.active {
+    background-color: var(--orange);
+    color: var(--brown);
+}
+
+.filter-buttons button:hover {
+    background-color: var(--orange);
+    color: var(--brown);
+    transition: all 0.3s;
+}
+
+.filter-posts .post {
+    border-bottom: unset;
+}
+.filter-posts .post img {
+    width: 30% !important;
+}
+
+.filter-posts .post .post__info {
+    width: 67% !important;
+}
+
+.filter-posts .post .post__info .title {
+    font-size: 40px;
+}

@@ -37,7 +37,7 @@
         ],
         (array) [
             'label' => 'News',
-            'href' => '#'
+            'href' => 'news'
         ],
         (array) [
             'label' => 'Ecosystem',
