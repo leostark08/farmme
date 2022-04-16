@@ -244,7 +244,7 @@ body {
 .filter-posts .post {
     border-bottom: unset;
 }
-.filter-posts .post img {
+.filter-posts .post .post__img {
     width: 30% !important;
 }
 
