@@ -155,6 +155,9 @@ body {
     font-size: 55px;
     font-family: "iCiel Pony";
 }
+.post .content {
+    text-align: justify;
+}
 .post .create-time {
     font-size: 15px;
 }
@@ -189,7 +192,9 @@ body {
     width: 12px;
     height: 12px;
 }
-
+.statistic .item {
+    padding: 10px 0;
+}
 .statistic .amount {
     font-family: "iCiel Pony";
     font-size: 96px;
@@ -215,6 +220,7 @@ body {
 }
 .category .category__description {
     font-size: 18px;
+    text-align: justify;
 }
 
 .filter-buttons button {
@@ -227,7 +233,7 @@ body {
     font-size: 20;
     font-family: "iCiel Pony";
     cursor: pointer;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .filter-buttons button.active {
@@ -245,13 +251,63 @@ body {
     border-bottom: unset;
 }
 .filter-posts .post .post__img {
-    width: 30% !important;
+    width: 30%;
 }
 
 .filter-posts .post .post__info {
-    width: 67% !important;
+    width: 67%;
 }
 
 .filter-posts .post .post__info .title {
     font-size: 40px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        margin: 20px 35px;
+    }
+    .head,
+    .post,
+    .statistic,
+    .categories {
+        flex-direction: column;
+    }
+
+    .head > div,
+    .post > *,
+    .categories > div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #search::placeholder {
+        font-size: 13px;
+    }
+    .post__info .title,
+    .head__title span {
+        font-size: 32px !important;
+    }
+    .statistic .item:nth-child(odd) {
+        background-color: #efab1736;
+    }
+    .categories .category__title {
+        height: unset;
+    }
+    .filter-buttons {
+        flex-wrap: wrap;
+    }
+    .filter-buttons button {
+        width: unset;
+        min-width: 110px;
+        margin: 5px;
+    }
+    .filter-posts .post > * {
+        width: 100% !important;
+    }
+    .statistic .amount {
+        font-size: 50px;
+    }
+    .statistic .label {
+        font-size: 20px;
+    }
 }
