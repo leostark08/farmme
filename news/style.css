@@ -285,13 +285,14 @@ body {
     }
     .post__info .title,
     .head__title span {
-        font-size: 32px !important;
+        font-size: 30px !important;
     }
     .statistic .item:nth-child(odd) {
         background-color: #efab1736;
     }
     .categories .category__title {
         height: unset;
+        font-size: 22px;
     }
     .filter-buttons {
         flex-wrap: wrap;
