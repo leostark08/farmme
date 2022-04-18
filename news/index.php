@@ -9,7 +9,7 @@ $post = [
     'created_at' => 'Apr 14, 2022'
 ];
 
-$filterPosts = [$post, $post];
+$filterPosts = [$post, $post, $post];
 
 $categories = [
     [
@@ -64,13 +64,13 @@ $categories = [
         </div>
     </div>
     <!-- POST -->
-    <div class="post container row">
+    <div class="post post--main container row">
         <img class="post__img" src="<?php echo $post['image'] ?>" alt="">
         <div class="post__info column justify-space-between">
             <span class="author">Post by: <?php echo $post['author'] ?></span>
             <span class="title"><?php echo $post['title'] ?></span>
             <p class="content"><?php echo $post['content'] ?></p>
-            <div class="subs justify-space-between">
+            <div class="subs justify-space-between align-end">
                 <div class="row">
                     <button class="btn-see-more">
                         Xem tiếp
@@ -91,7 +91,8 @@ $categories = [
             <div class="label">Social platform</div>
         </div>
         <div class="item column align-center">
-            <div class="amount">$39<span class="unit">million</span></div>
+            <div class="amount">$39<span class="unit unit--long">million</span><span class="unit unit--short">M</span>
+            </div>
             <div class="label">INO & Fundraising</div>
         </div>
         <div class="item column align-center">
@@ -129,23 +130,46 @@ $categories = [
 
         <!-- list posts -->
         <?php foreach ($filterPosts as $p) { ?>
-        <div class="post container row">
-            <img class="post__img" src="<?php echo $p['image'] ?>" alt="">
-            <div class="post__info column justify-space-between">
+        <div class="box">
+            <div class="title-mobile">
                 <span class="author">Post by: <?php echo $p['author'] ?></span>
                 <span class="title"><?php echo $p['title'] ?></span>
-                <p class="content"><?php echo $p['content'] ?></p>
-                <div class="subs justify-space-between">
-                    <div class="row">
-                        <button class="btn-see-more">
-                            Xem tiếp
-                        </button>
-                        <button class="btn-play">
-                            <img src="images/polygon.png" alt="Play">
-                        </button>
+            </div>
+            <div class="post row">
+                <img class="post__img" src="<?php echo $p['image'] ?>" alt="">
+                <div class="post__info column justify-space-between">
+                    <div class="title-desktop">
+                        <span class="author">Post by: <?php echo $p['author'] ?></span>
+                        <span class="title"><?php echo $p['title'] ?></span>
                     </div>
-                    <span class="create-time"><?php echo $p['created_at'] ?></span>
+
+                    <p class="content"><?php echo $p['content'] ?></p>
+
+                    <!-- subs in mobile screen -->
+                    <div class="subs subs--desktop justify-space-between align-end">
+                        <div class="row">
+                            <button class="btn-see-more">
+                                Xem tiếp
+                            </button>
+                            <button class="btn-play">
+                                <img src="images/polygon.png" alt="Play">
+                            </button>
+                        </div>
+                        <span class="create-time"><?php echo $p['created_at'] ?></span>
+                    </div>
                 </div>
+            </div>
+            <!-- subs in mobile screen -->
+            <div class="subs subs--mobile justify-space-between align-end">
+                <div class="row">
+                    <button class="btn-see-more">
+                        Xem tiếp
+                    </button>
+                    <button class="btn-play">
+                        <img src="images/polygon.png" alt="Play">
+                    </button>
+                </div>
+                <span class="create-time"><?php echo $p['created_at'] ?></span>
             </div>
         </div>
         <?php } ?>
