@@ -174,8 +174,11 @@ body {
     font-size: 15px;
     font-weight: bold;
 }
+.subs a {
+    text-decoration: none;
+}
+
 .subs .btn-see-more {
-    background-color: #fff;
     height: 30px;
     font-size: 15px;
     border: solid 3px var(--orange);
@@ -185,25 +188,20 @@ body {
     cursor: pointer;
     padding: 0 10px;
 }
+.subs .btn-see-more:hover {
+    background-color: var(--orange);
+    color: #fff;
+}
 .subs .btn-play {
-    width: 30px;
-    height: 30px;
-    border: solid 3px var(--orange);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    background: url("images/play.png") no-repeat;
+    background-size: contain;
 }
-.subs .btn-see-more:hover,
 .subs .btn-play:hover {
-    background-color: #efab1751;
     transition: all 0.3s;
-}
-.subs .btn-play img {
-    width: 12px;
-    height: 12px;
+    background: url("images/ic-play-filled.png") no-repeat;
+    background-size: contain;
 }
 .statistic .item {
     padding: 10px 0;
@@ -468,6 +466,7 @@ body {
 .post-info .content {
     font-weight: bold;
     margin-bottom: 20px;
+    overflow-y: auto;
 }
 .post-container .buttons {
     margin-top: 30px;

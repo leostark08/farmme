@@ -154,12 +154,12 @@ function getShortName($name)
 
                     <div class="subs justify-space-between align-end">
                         <div class="row">
-                            <button class="btn-see-more">
-                                Xem tiếp
-                            </button>
-                            <button class="btn-play">
-                                <img src="images/polygon.png" alt="Play">
-                            </button>
+                            <a href="detail.php">
+                                <div class="btn-see-more align-center">Xem tiếp</div>
+                            </a>
+                            <a href="#">
+                                <div class="btn-play"></div>
+                            </a>
                         </div>
                         <span class="create-time"><?php echo $rec['created_at'] ?></span>
                     </div>

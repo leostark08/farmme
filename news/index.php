@@ -72,12 +72,12 @@ $categories = [
             <p class="content"><?php echo $post['content'] ?></p>
             <div class="subs justify-space-between align-end">
                 <div class="row">
-                    <button onclick='location.href="detail.php"' class="btn-see-more">
-                        Xem tiếp
-                    </button>
-                    <button class="btn-play">
-                        <img src="images/polygon.png" alt="Play">
-                    </button>
+                    <a href="detail.php">
+                        <div class="btn-see-more align-center">Xem tiếp</div>
+                    </a>
+                    <a href="#">
+                        <div class="btn-play"></div>
+                    </a>
                 </div>
                 <span class="create-time"><?php echo $post['created_at'] ?></span>
             </div>
@@ -148,12 +148,12 @@ $categories = [
                     <!-- subs in mobile screen -->
                     <div class="subs subs--desktop justify-space-between align-end">
                         <div class="row">
-                            <button class="btn-see-more">
-                                Xem tiếp
-                            </button>
-                            <button class="btn-play">
-                                <img src="images/polygon.png" alt="Play">
-                            </button>
+                            <a href="detail.php">
+                                <div class="btn-see-more align-center">Xem tiếp</div>
+                            </a>
+                            <a href="#">
+                                <div class="btn-play"></div>
+                            </a>
                         </div>
                         <span class="create-time"><?php echo $p['created_at'] ?></span>
                     </div>
@@ -162,12 +162,12 @@ $categories = [
             <!-- subs in mobile screen -->
             <div class="subs subs--mobile justify-space-between align-end">
                 <div class="row">
-                    <button class="btn-see-more">
-                        Xem tiếp
-                    </button>
-                    <button class="btn-play">
-                        <img src="images/polygon.png" alt="Play">
-                    </button>
+                    <a href="detail.php">
+                        <div class="btn-see-more align-center">Xem tiếp</div>
+                    </a>
+                    <a href="#">
+                        <div class="btn-play"></div>
+                    </a>
                 </div>
                 <span class="create-time"><?php echo $p['created_at'] ?></span>
             </div>
