@@ -417,8 +417,12 @@ body {
     .filter-posts .post .post__info .content {
         margin: 0;
         height: 100px;
-        overflow: hidden;
         text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        white-space: normal;
     }
     .filter-posts .box {
         margin: 15px 35px;
