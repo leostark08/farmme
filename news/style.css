@@ -6,6 +6,8 @@
     --brown: #794821;
     --aqua: #85ede4;
     --orange: #efab17;
+    --grey: #e5e5e5;
+    --recommend-bg: rgba(121, 72, 33, 0.05);
 }
 
 body {
@@ -133,9 +135,9 @@ body {
     content: "";
     position: absolute;
     z-index: 1;
-    width: 30px;
-    height: 30px;
-    right: 5px;
+    width: 25px;
+    height: 25px;
+    right: 10px;
     background-image: url("images/ic-search.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -421,5 +423,210 @@ body {
     }
     .filter-posts .box {
         margin: 15px 35px;
+    }
+}
+
+/* DETAIL */
+.post-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.post-container .post-info {
+    width: calc(500% / 12);
+    padding-right: 30px;
+}
+.post-container .post-detail {
+    width: calc(700% / 12);
+}
+.post-info .avatar {
+    width: 120px;
+    height: 120px;
+    background-color: var(--grey);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: var(--orange);
+}
+
+.post-info .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+.post-info p {
+    margin: unset;
+}
+.post-info .title {
+    font-size: 55px;
+    font-family: "iCiel Pony";
+}
+.post-info .content {
+    font-weight: bold;
+}
+.post-container .buttons {
+    margin-top: 30px;
+    display: flex;
+}
+.post-detail img {
+    width: 100%;
+}
+.buttons--mobile {
+    display: none !important;
+}
+.post-container .buttons div {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.post-container .buttons div:not(:first-child) {
+    margin-left: 20px;
+}
+.post-container .buttons .favorite {
+    background-image: url("images/ic_favorite.png");
+}
+.post-container .buttons .favorite:hover {
+    background-image: url("images/ic_favorited.png");
+    transition: all 0.3s;
+}
+.post-container .buttons .favorite.ed {
+    background-image: url("images/ic_favorited.png");
+}
+.post-container .buttons .share {
+    background-image: url("images/share.png");
+}
+
+.lb-title {
+    display: flex;
+    position: relative;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.lb-title::before {
+    margin-right: 15px;
+    content: "";
+    width: 15px;
+    border-radius: 10px;
+    background-color: var(--orange);
+}
+.recommend-container .item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--recommend-bg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.recommend-container .item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recommend-container .item > div {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.recommend-container .item .subs {
+    margin: 15px 0;
+}
+.recommend-container .item .title {
+    font-size: 32px;
+    font-family: "iCiel Pony";
+}
+
+.recommend-container .item .subs button {
+    background-color: var(--recommend-bg);
+}
+.recommend-container .item .subs .create-time {
+    font-size: 20px;
+    font-weight: bold;
+}
+@media screen and (max-width: 640px) {
+    .post-container {
+        flex-direction: column;
+    }
+    .post-container > * {
+        width: 100% !important;
+    }
+    .post-info .author {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .post-info .avatar {
+        height: 60px;
+        width: 60px;
+        font-size: 28px;
+    }
+    .post-info .info {
+        margin-left: 10px !important;
+    }
+    .buttons--mobile {
+        display: flex !important;
+        margin-top: 0 !important;
+    }
+    .buttons--desktop {
+        display: none !important;
+    }
+    .buttons > div {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .post-info .title {
+        font-size: 32px;
+    }
+    .post-info .content {
+        font-size: 14px;
+    }
+    .post-detail .detail span {
+        font-size: 15px !important;
+    }
+    .post-detail .detail strong {
+        font-size: 18px !important;
+    }
+
+    .lb-title {
+        font-size: 18px !important;
+    }
+    .recommends {
+        flex-direction: column;
+    }
+    .recommends .item {
+        width: 100%;
+        flex-direction: row;
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .recommends .item img {
+        width: 45%;
+        height: fit-content;
+    }
+    .item__content {
+        padding: 0 0 0 10px !important;
+    }
+    .item__content .subs {
+        display: none;
+    }
+    .item__content .content {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+    .recommend-container .item .title {
+        font-size: 16px;
     }
 }

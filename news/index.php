@@ -72,7 +72,7 @@ $categories = [
             <p class="content"><?php echo $post['content'] ?></p>
             <div class="subs justify-space-between align-end">
                 <div class="row">
-                    <button class="btn-see-more">
+                    <button onclick='location.href="detail.php"' class="btn-see-more">
                         Xem tiếp
                     </button>
                     <button class="btn-play">
