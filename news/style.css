@@ -467,6 +467,7 @@ body {
 }
 .post-info .content {
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .post-container .buttons {
     margin-top: 30px;
