@@ -615,7 +615,7 @@ body {
     }
     .recommends .item img {
         width: 45%;
-        height: fit-content;
+        /* height: fit-content; */
     }
     .item__content {
         padding: 0 0 0 10px !important;
