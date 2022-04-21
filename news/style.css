@@ -147,12 +147,10 @@ body {
 
 .statistic {
     display: flex;
-    padding-bottom: 50px;
     justify-content: space-between;
 }
 .categories {
     display: flex;
-    padding-bottom: 50px;
     justify-content: space-between;
     border-bottom: 1px solid var(--orange);
 }
