@@ -265,6 +265,10 @@ $navItems = array(
         box-shadow: -3px 3px 0 0 #4f2c15 !important;
     }
 
+    .nav-sub li:last-child a {
+        border-radius: 0 0 10px 10px;
+    }
+
     .nav-collapse {
         display: block;
     }
