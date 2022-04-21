@@ -12,11 +12,10 @@
 
 body {
     padding: 0;
-    margin: 0;
     font-family: "Quicksand";
     font-size: 20px;
     color: var(--brown);
-    margin-bottom: 500px;
+    margin: 150px 0 500px 0;
 }
 .container {
     margin: 50px 85px;
@@ -557,6 +556,49 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
+.subscribe-container {
+    margin-top: 200px;
+    position: relative;
+}
+.subscribe-container .subscribe {
+    position: relative;
+    width: 50%;
+    background-color: var(--brown);
+    display: flex;
+    margin: auto;
+    padding: 2px;
+    border-radius: 5px;
+}
+.subscribe-container .subscribe::before {
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 200px;
+    height: 100px;
+    background: url("images/monster0.png") bottom center no-repeat;
+    background-size: contain;
+    bottom: 100%;
+}
+.subscribe input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--brown);
+    color: #fff;
+}
+.subscribe input::placeholder {
+    color: #f5dcc0;
+}
+.subscribe button {
+    width: 200px;
+    background-color: #f5dcc0;
+    border: none;
+    border-radius: 5px;
+    color: var(--brown);
+}
+
 @media screen and (max-width: 640px) {
     .post-container {
         flex-direction: column;
@@ -633,5 +675,14 @@ body {
     }
     .recommend-container .item .title {
         font-size: 16px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        width: 100% !important;
+    }
+    .subscribe button {
+        padding: 10px;
+        width: inherit;
     }
 }
