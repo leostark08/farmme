@@ -8,6 +8,7 @@
     --orange: #efab17;
     --grey: #e5e5e5;
     --recommend-bg: rgba(121, 72, 33, 0.05);
+    --semi-bold: 600;
 }
 
 body {
@@ -107,6 +108,8 @@ body {
     font-size: 16px;
     text-decoration: none;
     color: var(--brown);
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .search-box {
@@ -161,13 +164,17 @@ body {
 .post .author {
     font-size: 15px;
     font-weight: bold;
+    line-height: 26px;
 }
 .post .title {
     font-size: 55px;
     font-family: "iCiel Pony";
+    line-height: 60px;
 }
 .post .content {
     text-align: justify;
+    font-weight: var(--semi-bold);
+    line-height: 26px;
 }
 .post .create-time {
     font-size: 15px;
@@ -186,6 +193,7 @@ body {
     margin-right: 10px;
     cursor: pointer;
     padding: 0 10px;
+    font-weight: bold;
 }
 .subs .btn-see-more:hover {
     transition: all 0.3s;
@@ -231,11 +239,14 @@ body {
     font-size: 32px;
     font-family: "iCiel Pony";
     margin: 15px 0;
-    height: 100px;
+    height: 65px;
+    line-height: 32px;
 }
 .category .category__description {
     font-size: 18px;
     text-align: justify;
+    line-height: 21px;
+    font-weight: bold;
 }
 
 .filter-buttons button {
@@ -244,11 +255,13 @@ body {
     color: var(--orange);
     border: none;
     width: 175px;
-    height: 36px;
-    font-size: 20;
+    height: 40px;
+    font-size: 20px;
+    line-height: 25px;
     font-family: "iCiel Pony";
     cursor: pointer;
     margin: 10px;
+    letter-spacing: 2%;
 }
 
 .filter-buttons button.active {
@@ -302,6 +315,7 @@ body {
 @media screen and (max-width: 640px) {
     body {
         font-size: 13px;
+        margin: 100px 0 0 0;
     }
     .container {
         margin: 20px 35px;
@@ -318,6 +332,7 @@ body {
     }
     .post--main .title {
         font-size: 24px;
+        line-height: 26px;
     }
     .head .head__title {
         display: flex;
@@ -340,6 +355,7 @@ body {
         color: var(--brown);
         font-size: 12px;
         font-weight: bold;
+        line-height: 26px;
     }
     .title-mobile .title {
         color: var(--brown);
@@ -360,9 +376,12 @@ body {
     .categories .category__title {
         font-size: 15px;
         height: unset;
+        line-height: 25px;
+        margin: 10px 0;
     }
     .category .category__description {
         font-size: 12px;
+        line-height: 13px;
     }
     .filter-buttons {
         flex-wrap: wrap;
@@ -391,6 +410,7 @@ body {
     .statistic .label {
         font-size: 14px;
         text-align: center;
+        line-height: 14px;
     }
     .statistic .item {
         width: 50%;
@@ -415,16 +435,26 @@ body {
     }
     .filter-posts .post .post__info .content {
         margin: 0;
-        height: 100px;
+        font-size: 14px;
         text-overflow: ellipsis;
         overflow: hidden;
         display: -webkit-box !important;
         -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
         white-space: normal;
+        line-height: 16px;
     }
     .filter-posts .box {
         margin: 15px 35px;
+    }
+    .filter-buttons button {
+        width: 100px;
+        height: 22px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .post .content {
+        line-height: 16px;
     }
 }
 
@@ -466,6 +496,8 @@ body {
 .post-info .title {
     font-size: 55px;
     font-family: "iCiel Pony";
+    line-height: 69px;
+    margin: 40px 0;
 }
 .post-info .content {
     font-weight: bold;
@@ -547,6 +579,12 @@ body {
 .recommend-container .item .title {
     font-size: 32px;
     font-family: "iCiel Pony";
+    line-height: 35px;
+    margin: 30px 0;
+}
+.recommend-container .item .content {
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .recommend-container .item .subs button {
@@ -631,6 +669,8 @@ body {
     }
     .post-info .title {
         font-size: 32px;
+        line-height: 38px;
+        margin: 20px 0;
     }
     .post-info .content {
         font-size: 14px;
@@ -672,9 +712,14 @@ body {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         white-space: normal;
+        font-size: 12px !important;
+        line-height: 13px !important;
+        font-weight: var(--semi-bold);
     }
     .recommend-container .item .title {
         font-size: 16px;
+        margin: 0;
+        line-height: 23px;
     }
 
     .subscribe {

@@ -283,7 +283,7 @@ $navItems = array(
         <ul>
             <?php
             foreach ($navItems as $item) {
-                $cls = isset($item['subs']) ? '<span class="nav-collapse">></span>' : '';
+                $cls = isset($item['subs']) ? '<span class="nav-collapse">▼</span>' : '';
                 echo ('<li class="nav-item">');
                 echo ('<a href="' . $item['href'] . '">' . $item['label'] . '</a>');
                 echo $cls;
