@@ -6,7 +6,7 @@ $(document).ready(function () {
         else srh = $('.post-detail').height();
         $('.post-info').css('height', srh + 'px');
     }
-    $('.filter-buttons button').click(function () {
+    $('.filter-buttons .btn-filter').click(function () {
         $(this).parent().find('.active').removeClass('active');
         $(this).addClass('active');
     });

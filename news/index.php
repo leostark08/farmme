@@ -121,14 +121,14 @@ $categories = [
     </div>
 
     <!-- FILTER POSTS -->
-    <div class="colum filter-posts">
+    <div class="container colum filter-posts">
         <!-- Filter buttons -->
         <div class="filter-buttons justify-center">
-            <button class="active">General</button>
-            <button>AMA Recaps</button>
-            <button>News Updates</button>
-            <button>Solo Rankings</button>
-            <button>Handbook</button>
+            <div class="btn-filter active">General</div>
+            <div class="btn-filter">AMA Recaps</div>
+            <div class="btn-filter">News Updates</div>
+            <div class="btn-filter">Solo Rankings</div>
+            <div class="btn-filter">Handbook</div>
         </div>
 
         <!-- list posts -->
