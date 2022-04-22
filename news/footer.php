@@ -38,7 +38,75 @@
     font-family: 'Arial';
 }
 
-@media screen and (max-width: 640px) {
+.subscribe-container {
+    margin-top: 200px;
+    position: relative;
+}
+
+.subscribe-container .subscribe {
+    position: relative;
+    width: 50%;
+    background-color: var(--brown);
+    display: flex;
+    margin: auto;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.subscribe-container .subscribe::before {
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 200px;
+    height: 100px;
+    background: url("images/monster0.png") bottom center no-repeat;
+    background-size: contain;
+    bottom: 100%;
+}
+
+.subscribe input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--brown);
+    color: #fff;
+}
+
+.subscribe input::placeholder {
+    color: #f5dcc0;
+}
+
+.subscribe button {
+    width: 200px;
+    background-color: #f5dcc0;
+    border: none;
+    border-radius: 5px;
+    color: var(--brown);
+}
+
+@media screen and (max-width: 1023px) {
+
+    .subscribe-container .subscribe {
+        width: 75%;
+    }
+
+    .footer__logo img {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subscribe {
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .subscribe button {
+        padding: 10px;
+        width: inherit;
+    }
+
     #footer {
         flex-direction: column;
     }
@@ -49,6 +117,12 @@
     }
 }
 </style>
+<div class="subscribe-container container">
+    <div class="subscribe">
+        <input type="text" placeholder="Type your email...">
+        <button>Subscribe</button>
+    </div>
+</div>
 <footer id="footer">
     <div class="footer__logo">
         <img src="images/footer-logo.png" alt="">

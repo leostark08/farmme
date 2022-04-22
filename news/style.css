@@ -153,6 +153,7 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--orange);
+    padding-bottom: 50px;
 }
 .post {
     display: flex;
@@ -320,9 +321,59 @@ body {
 .category__img {
     height: fit-content;
     width: 100%;
+    border-radius: 10px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1023px) {
+    .container {
+        margin: 50px 35px;
+    }
+    .statistic {
+        flex-wrap: wrap;
+    }
+    .statistic .item {
+        width: 50%;
+    }
+    .categories {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .category {
+        width: 47%;
+        margin-bottom: 30px;
+    }
+
+    .title-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-desktop {
+        display: none;
+    }
+    .title-mobile .author {
+        color: var(--brown);
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+    .title-mobile .title {
+        color: var(--brown);
+        font-size: 18px;
+        font-family: "iCiel Pony";
+    }
+
+    .filter-posts .post .post__info .content {
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 767px) {
     body {
         font-size: 13px;
         margin: 100px 0 0 0;
@@ -357,32 +408,28 @@ body {
     .head__title span {
         font-size: 30px !important;
     }
-    .title-mobile {
+    /* .title-mobile {
         display: flex;
         flex-direction: column;
-    }
+    } */
     .title-mobile .author {
-        color: var(--brown);
         font-size: 12px;
-        font-weight: bold;
         line-height: 26px;
     }
     .title-mobile .title {
-        color: var(--brown);
         font-size: 18px;
-        font-family: "iCiel Pony";
     }
-    .title-desktop {
+    /* .title-desktop {
         display: none;
-    }
-    .categories {
+    } */
+    /* .categories {
         flex-wrap: wrap;
         justify-content: space-between;
     }
     .category {
         width: 47%;
         margin-bottom: 30px;
-    }
+    } */
     .categories .category__title {
         font-size: 15px;
         height: unset;
@@ -410,9 +457,9 @@ body {
     .filter-posts .post > * {
         width: 48% !important;
     }
-    .statistic {
+    /* .statistic {
         flex-wrap: wrap;
-    }
+    } */
     .statistic .amount {
         font-size: 32px;
         display: flex;
@@ -422,9 +469,7 @@ body {
         text-align: center;
         line-height: 14px;
     }
-    .statistic .item {
-        width: 50%;
-    }
+
     .statistic .unit--short {
         display: block;
     }
@@ -605,49 +650,7 @@ body {
     font-weight: bold;
 }
 
-.subscribe-container {
-    margin-top: 200px;
-    position: relative;
-}
-.subscribe-container .subscribe {
-    position: relative;
-    width: 50%;
-    background-color: var(--brown);
-    display: flex;
-    margin: auto;
-    padding: 2px;
-    border-radius: 5px;
-}
-.subscribe-container .subscribe::before {
-    position: absolute;
-    right: 0;
-    content: "";
-    width: 200px;
-    height: 100px;
-    background: url("images/monster0.png") bottom center no-repeat;
-    background-size: contain;
-    bottom: 100%;
-}
-.subscribe input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: var(--brown);
-    color: #fff;
-}
-.subscribe input::placeholder {
-    color: #f5dcc0;
-}
-.subscribe button {
-    width: 200px;
-    background-color: #f5dcc0;
-    border: none;
-    border-radius: 5px;
-    color: var(--brown);
-}
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     .post-container {
         flex-direction: column;
     }
@@ -707,7 +710,6 @@ body {
     }
     .recommends .item img {
         width: 45%;
-        /* height: fit-content; */
     }
     .item__content {
         padding: 0 0 0 10px !important;
@@ -730,14 +732,5 @@ body {
         font-size: 16px;
         margin: 0;
         line-height: 23px;
-    }
-
-    .subscribe {
-        flex-direction: column;
-        width: 100% !important;
-    }
-    .subscribe button {
-        padding: 10px;
-        width: inherit;
     }
 }

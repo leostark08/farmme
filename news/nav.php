@@ -182,7 +182,13 @@ $navItems = array(
     border-left: 1px solid var(--nav-sub-bg);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1023px) {
+    .navigation {
+        margin: 0 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
     #toggle {
         display: flex;
     }

@@ -13,22 +13,22 @@ $filterPosts = [$post, $post, $post];
 
 $categories = [
     [
-        'image' => 'images/category1.png',
+        'image' => 'images/cg_recaps.png',
         'title' => 'AMA Recaps',
         'description' => 'Tổng hợp tất cả thông tin chính tại các AMA vừa qua, bao gồm nội dung về cập nhật tính năng, chính sách, lộ trình và kế hoạch sắp tới được chia sẻ bởi Farm Me team.'
     ],
     [
-        'image' => 'images/category1.png',
+        'image' => 'images/cg_news-updates.png',
         'title' => 'News Updates',
         'description' => 'Nắm nhanh những thông tin cập nhập mới nhất trong Thế giới Farm Me, thông báo quan trọng về các tính năng game và những thay đổi sắp tới ảnh hưởng trực tiếp tới người chơi.'
     ],
     [
-        'image' => 'images/category1.png',
+        'image' => 'images/cg_solo-rankings.png',
         'title' => 'Solo Rankings',
         'description' => 'Chi tiết các cuộc đua, thời gian bắt đầu, kết thúc, quy định,...những sự điều chỉnh từ Farm Me team trong suốt quá trình tổ chức tuần đua.'
     ],
     [
-        'image' => 'images/category1.png',
+        'image' => 'images/cg_handbook.png',
         'title' => 'Farm Me Handbook',
         'description' => 'Sổ tay Farm Me - nắm tất cả các mẹo hay, những thông tin bổ ích để khám phá Farm Me hiệu quả nhất.'
     ],
@@ -176,13 +176,6 @@ $categories = [
             </div>
         </div>
         <?php } ?>
-    </div>
-
-    <div class="subscribe-container container">
-        <div class="subscribe">
-            <input type="text" placeholder="Type your email...">
-            <button>Subscribe</button>
-        </div>
     </div>
 
 </body>
