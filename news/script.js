@@ -16,12 +16,5 @@ $(document).ready(function () {
             $(this).removeClass('ed');
         } else $(this).addClass('ed');
     });
-    $('#toggle').click(function () {
-        $('.nav-container').css({ 'left': '0', 'transition': 'all 0.3s' });
-        $('#toggle').css('display', 'none');
-    });
-    $('#nav-close').click(function () {
-        $('.nav-container').css({ 'left': '100vh', 'transition': 'all 0.3s' });
-        $('#toggle').css('display', 'flex');
-    })
+
 })

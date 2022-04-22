@@ -89,6 +89,7 @@ $navItems = array(
 }
 
 .nav-container {
+    transition: all 0.3s;
     width: 100%;
     top: 0;
 }
@@ -187,7 +188,7 @@ $navItems = array(
     }
 
     .nav-container {
-        left: 100vh;
+        left: 100%;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -303,5 +304,16 @@ $navItems = array(
 </div>
 
 <script>
+const toggle = document.getElementById("toggle");
+const navContainer = document.querySelector(".nav-container");
+const close = document.getElementById("nav-close");
 
+toggle.addEventListener("click", function() {
+    navContainer.style.left = "0px";
+    toggle.style.display = "none";
+});
+close.addEventListener("click", function() {
+    navContainer.style.left = "100%";
+    toggle.style.display = "flex";
+});
 </script>
