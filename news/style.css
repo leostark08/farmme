@@ -178,6 +178,7 @@ body {
     text-align: justify;
     font-weight: var(--semi-bold);
     line-height: 26px;
+    margin: 0;
 }
 .post .create-time {
     font-size: 15px;
@@ -197,6 +198,7 @@ body {
     cursor: pointer;
     padding: 0 10px;
     font-weight: bold;
+    width: max-content;
 }
 .subs .btn-see-more:hover {
     transition: all 0.3s;
