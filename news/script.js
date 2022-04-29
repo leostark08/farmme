@@ -17,4 +17,23 @@ $(document).ready(function () {
         } else $(this).addClass('ed');
     });
 
+
+    var screenWidth = $(window).width();
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: screenWidth <= 768 ? 'vertical' : 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+    });
+
 })

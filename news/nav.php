@@ -183,12 +183,6 @@ $navItems = array(
 }
 
 @media screen and (max-width: 1023px) {
-    .navigation {
-        margin: 0 35px;
-    }
-}
-
-@media screen and (max-width: 767px) {
     #toggle {
         display: flex;
     }
@@ -205,6 +199,8 @@ $navItems = array(
         flex-direction: column;
         position: absolute;
         top: 50%;
+        margin: 0;
+        right: 0;
         transform: translateY(-50%);
         border-radius: 20px 0 0 20px;
         box-shadow: -7px 2px 0 0 #4f2c15 !important;

@@ -42,6 +42,9 @@ $categories = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css"
+        integrity="sha512-g0BdMh4zEp4DuzHdoenUitpFx195QZfSFq5sd04kXZLwz5F9pUlGqwk+1jlvBBFGOnTCt0b5FsmQyl+5v2fxWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>News</title>
@@ -176,6 +179,65 @@ $categories = [
             </div>
         </div>
         <?php } ?>
+
+        <div class="pagination">
+            <span>Page <input type="text" name="current-page" id="" value="1"> of 200 </span>
+            <div class="pag-ctrl pag-prev"></div>
+            <div class="pag-ctrl pag-next enabled"></div>
+        </div>
+    </div>
+
+    <div class="mention-container container">
+        <div class="title">
+            Media Mentions
+        </div>
+        <div class="mention">
+            <div class="swiper-ctrl swiper-prev"></div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="logos">
+                            <div class="row">
+                                <a href="#"><img src="images/logo-yahoofinance.png" alt=""></a>
+                                <a href="#"><img src="images/logo-finanzen.png" alt=""></a>
+                                <a href="#"><img src="images/logo-morningstar.png" alt=""></a>
+                            </div>
+                            <div class="row">
+                                <a href="#"><img src="images/logo-pinoytechsaga.png" alt=""></a>
+                                <a href="#"><img src="images/logo-businessdiaryph.png" alt=""></a>
+                                <a href="#"><img src="images/logo-techsignin.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="logos">
+                            <div class="row">
+                                <a href="#"><img src="images/logo-brandinginasia.png" alt=""></a>
+                                <a href="#"><img src="images/logo-ASEAN.png" alt=""></a>
+                                <a href="#"><img src="images/logo-TMCnet.png" alt=""></a>
+                            </div>
+                            <div class="row">
+                                <a href="#"><img src="images/logo-VBC.png" alt=""></a>
+                                <a href="#"><img src="images/logo-aap.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-ctrl swiper-next"></div>
+        </div>
+    </div>
+
+    <div class="container contact">
+        <div class="title">
+            <span>Small talk with</br>FARM ME <img src="images/ic-ribbon.png" alt=""></span>
+        </div>
+        <div class="content">
+            <span>
+                Have you enjoyed experiencing and exploring the Farm Me Metarverse universe? Give us feedback then get
+                some small gifts from Farm Me ^^ <a href="#"><img src="images/share-your-thinking.png" alt=""></a>
+            </span>
+        </div>
     </div>
 
 </body>
@@ -184,6 +246,9 @@ $categories = [
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"
+    integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js"></script>
 

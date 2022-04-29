@@ -286,6 +286,7 @@ body {
 }
 .filter-posts .post .post__img {
     width: 30%;
+    height: fit-content;
 }
 
 .filter-posts .post .post__info {
@@ -314,9 +315,6 @@ body {
 .filter-posts .box {
     margin: 30px 0;
 }
-.filter-posts .box:not(:last-child) {
-    border-bottom: 1px solid var(--orange);
-}
 
 .category__img {
     height: fit-content;
@@ -324,31 +322,33 @@ body {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1279px) {
+    .head__title span {
+        font-size: 64px;
+    }
+
+    .lang-switch a {
+        font-size: 25px;
+    }
+    .head__search {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
     .container {
         margin: 50px 35px;
     }
-    .statistic {
-        flex-wrap: wrap;
-    }
+
     .statistic .item {
         width: 50%;
     }
     .categories {
-        flex-wrap: wrap;
         justify-content: space-between;
     }
     .category {
-        width: 47%;
         margin-bottom: 30px;
-    }
-
-    .title-mobile {
-        display: flex;
-        flex-direction: column;
-    }
-    .title-desktop {
-        display: none;
     }
     .title-mobile .author {
         color: var(--brown);
@@ -370,6 +370,24 @@ body {
         -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
         white-space: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .filter-posts .post .post__info .title {
+        font-size: 27px;
+    }
+
+    .post .title {
+        font-size: 50px;
+        line-height: 54px;
+    }
+
+    .statistic .amount {
+        font-size: 63px;
+    }
+
+    .filter-buttons .btn-filter {
+        font-size: 17px;
     }
 }
 
@@ -408,10 +426,10 @@ body {
     .head__title span {
         font-size: 30px !important;
     }
-    /* .title-mobile {
+    .title-mobile {
         display: flex;
         flex-direction: column;
-    } */
+    }
     .title-mobile .author {
         font-size: 12px;
         line-height: 26px;
@@ -419,17 +437,20 @@ body {
     .title-mobile .title {
         font-size: 18px;
     }
-    /* .title-desktop {
+    .statistic {
+        flex-wrap: wrap;
+    }
+    .title-desktop {
         display: none;
-    } */
-    /* .categories {
+    }
+    .categories {
         flex-wrap: wrap;
         justify-content: space-between;
     }
     .category {
         width: 47%;
         margin-bottom: 30px;
-    } */
+    }
     .categories .category__title {
         font-size: 15px;
         height: unset;
@@ -457,9 +478,6 @@ body {
     .filter-posts .post > * {
         width: 48% !important;
     }
-    /* .statistic {
-        flex-wrap: wrap;
-    } */
     .statistic .amount {
         font-size: 32px;
         display: flex;
@@ -650,6 +668,43 @@ body {
     font-weight: bold;
 }
 
+@media screen and (max-width: 1279px) {
+    .post-info .title {
+        font-size: 45px;
+        line-height: 56px;
+    }
+    .post-container .post-info {
+        width: calc(400% / 12);
+    }
+    .post-container .post-detail {
+        width: calc(800% / 12);
+    }
+    .post-info .content {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .lb-title {
+        font-size: 25px;
+        line-height: 26px;
+    }
+    .recommend-container .item .title {
+        font-size: 19px;
+        line-height: 21px;
+    }
+    .recommend-container .item .content {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .recommend-container .item .subs .create-time {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .post .content {
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .post-container {
         flex-direction: column;
@@ -732,5 +787,189 @@ body {
         font-size: 16px;
         margin: 0;
         line-height: 23px;
+    }
+}
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: bold;
+    align-items: center;
+    margin: 50px 0;
+}
+.pagination input[type="text"] {
+    width: 100px;
+    border: solid 3px var(--orange);
+    border-radius: 50px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 19px;
+    color: var(--brown);
+}
+.pagination .pag-ctrl {
+    background: url("images/ic-next.png") no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.pagination .pag-ctrl.enabled:hover {
+    background: url("images/ic-next-filled.png") no-repeat;
+    background-size: contain;
+    transition: all 0.3s;
+    opacity: 1;
+}
+.pagination .pag-prev {
+    transform: rotate(180deg);
+}
+.pagination .pag-ctrl.enabled {
+    opacity: 1;
+}
+.filter-posts {
+    border-bottom: 1px solid var(--orange);
+}
+
+.mention {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px var(--orange);
+    padding-bottom: 50px;
+}
+.mention-container .title {
+    font-size: 40px;
+    font-family: "iCiel Pony";
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.mention .swiper {
+    width: 100%;
+    height: 200px;
+}
+.mention .swiper-ctrl {
+    width: 70px;
+    height: 70px;
+    background: url("images/ic-next.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.mention .swiper-ctrl:hover {
+    background: url("images/ic-next-filled.png") no-repeat;
+    background-size: contain;
+    transition: all 0.3s;
+}
+
+.mention .swiper-prev {
+    transform: rotate(180deg);
+}
+
+.mention .logos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mention .logos .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mention .logos .row a {
+    display: flex;
+    justify-content: center;
+}
+.mention .logos img {
+    width: 80%;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact .title {
+    width: 40%;
+    font-size: 52px;
+    font-family: "iCiel Pony";
+    line-height: 52px;
+    align-self: flex-start;
+}
+
+.contact .content {
+    width: 30%;
+    align-self: flex-end;
+}
+
+.contact .content img {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1279px) {
+    .post {
+        flex-direction: column;
+    }
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head .lang-switch {
+        justify-content: center;
+    }
+    .post > * {
+        width: 100%;
+    }
+
+    .filter-posts .post {
+        flex-direction: row;
+    }
+
+    .contact .title {
+        width: 50%;
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .contact .title img {
+        width: 135px;
+    }
+
+    .contact .content {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mention {
+        flex-direction: column;
+    }
+
+    .mention .swiper-ctrl {
+        width: 36px;
+        height: 36px;
+    }
+
+    .mention .swiper-prev {
+        transform: rotate(-90deg);
+    }
+    .mention .swiper-next {
+        transform: rotate(90deg);
+    }
+    .mention .logos {
+        flex-direction: row;
+    }
+    .mention .logos .row {
+        flex-direction: column;
+    }
+    .mention .logos img {
+        margin: 15px 0;
+    }
+
+    .contact .title {
+        font-size: 22px;
+        line-height: 22px;
     }
 }
