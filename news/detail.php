@@ -120,16 +120,28 @@ function getShortName($name)
                     </div>
                 </div>
                 <div class="buttons buttons--mobile">
-                    <div class="favorite"></div>
-                    <div class="share"></div>
+                    <div class="favorite btn-social"></div>
+                    <ul class="share-container">
+                        <li class="btn-social share"></li>
+                        <li class="divider"></li>
+                        <li class="btn-social share--facebook"></li>
+                        <li class="btn-social share--twitter"></li>
+                        <li class="btn-social share--telegram"></li>
+                    </ul>
                 </div>
             </div>
             <span class="title"><?php echo $post['title'] ?></span>
             <span class="content"><?php echo $post['content'] ?></span>
 
             <div class="buttons buttons--desktop">
-                <div class="favorite"></div>
-                <div class="share"></div>
+                <div class="favorite btn-social"></div>
+                <ul class="share-container">
+                    <li class="btn-social share"></li>
+                    <li class="divider"></li>
+                    <li class="btn-social share--facebook"></li>
+                    <li class="btn-social share--twitter"></li>
+                    <li class="btn-social share--telegram"></li>
+                </ul>
             </div>
         </div>
 
