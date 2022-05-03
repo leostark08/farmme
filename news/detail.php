@@ -113,7 +113,7 @@ function getShortName($name)
         <div class="post-info column">
             <div class="author row">
                 <div class="justify-start align-center">
-                    <div class="avatar"><?php echo getShortName($post['author']); ?></div>
+                    <div class="avatar"><img src="images/FM_logo2.png" alt=""></div>
                     <div class="info">
                         <span class="name"><?php echo $post['author'] ?></span>
                         <p class="created-time"><?php echo $post['created_at'] ?></p>

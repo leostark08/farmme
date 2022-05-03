@@ -14,12 +14,16 @@
         <div class="frame-container">
             <img id="frame" src="images/frame.png" alt="">
             <div class="images" id="image1">
-                <!-- <img src="images/category1.png" alt=""> -->
+                <div class="zoom_outer">
+                    <div id="zoom">
+                        <img src="https://picsum.photos/1280/720" alt="zoom">
+                    </div>
+                </div>
             </div>
         </div>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
+        <form id="formImg1" action="upload.php" method="post" enctype="multipart/form-data">
             Select image to upload:
-            <input id="pickImg1" type="file" name="fileToUpload" id="fileToUpload">
+            <input id="pickImg1" type="file" name="fileupload" id="fileupload">
             <input id="uploadImg1" type="submit" value="Upload Image" name="submit">
         </form>
 
