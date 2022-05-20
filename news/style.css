@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "iCiel Pony";
-    src: url("fonts/iCiel-Pony.ttf");
+    font-family: 'iCiel Pony';
+    src: url('fonts/iCiel-Pony.ttf');
 }
 :root {
     --brown: #794821;
@@ -13,7 +13,7 @@
 
 body {
     padding: 0;
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     font-size: 20px;
     color: var(--brown);
     margin: 150px 0 0 0;
@@ -96,7 +96,7 @@ body {
     width: 100%;
 }
 .head__title span {
-    font-family: "iCiel Pony";
+    font-family: 'iCiel Pony';
     color: var(--brown);
     font-size: 50px;
 }
@@ -134,13 +134,13 @@ body {
 }
 
 .search-box::before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 1;
     width: 25px;
     height: 25px;
     right: 10px;
-    background-image: url("images/ic-search.png");
+    background-image: url('images/ic-search.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -171,7 +171,7 @@ body {
 }
 .post .title {
     font-size: 55px;
-    font-family: "iCiel Pony";
+    font-family: 'iCiel Pony';
     line-height: 60px;
 }
 .post .content {
@@ -208,19 +208,19 @@ body {
 .subs .btn-play {
     width: 36px;
     height: 36px;
-    background: url("images/play.png") no-repeat;
+    background: url('images/play.png') no-repeat;
     background-size: contain;
 }
 .subs .btn-play:hover {
     transition: all 0.3s;
-    background: url("images/ic-play-filled.png") no-repeat;
+    background: url('images/ic-play-filled.png') no-repeat;
     background-size: contain;
 }
 .statistic .item {
     padding: 10px 0;
 }
 .statistic .amount {
-    font-family: "iCiel Pony";
+    font-family: 'iCiel Pony';
     font-size: 96px;
     color: var(--orange);
 }
@@ -242,7 +242,7 @@ body {
 
 .category .category__title {
     font-size: 32px;
-    font-family: "iCiel Pony";
+    font-family: 'iCiel Pony';
     margin: 15px 0;
     height: 65px;
     line-height: 32px;
@@ -263,7 +263,7 @@ body {
     height: 35px;
     font-size: 20px;
     line-height: 25px;
-    font-family: "iCiel Pony";
+    font-family: 'iCiel Pony';
     cursor: pointer;
     margin: 10px;
     display: flex;
@@ -363,7 +363,7 @@ body {
     .title-mobile .title {
         color: var(--brown);
         font-size: 18px;
-        font-family: "iCiel Pony";
+        font-family: 'iCiel Pony';
     }
 
     .filter-posts .post .post__info .content {
@@ -581,7 +581,7 @@ body {
 }
 .post-info .title {
     font-size: 55px;
-    font-family: "iCiel Pony";
+    font-family: 'iCiel Pony';
     line-height: 69px;
     margin: 40px 0;
 }
@@ -643,26 +643,26 @@ body {
     margin-left: 15px;
 }
 .post-container .buttons .favorite {
-    background-image: url("images/ic_favorite.png");
+    background-image: url('images/ic_favorite.png');
 }
 .post-container .buttons .favorite:hover {
-    background-image: url("images/ic_favorited.png");
+    background-image: url('images/ic_favorited.png');
     transition: all 0.3s;
 }
 .post-container .buttons .favorite.ed {
-    background-image: url("images/ic_favorited.png");
+    background-image: url('images/ic_favorited.png');
 }
 .post-container .buttons .share {
-    background-image: url("images/share.png");
+    background-image: url('images/share.png');
 }
 .post-container .buttons .share--facebook {
-    background-image: url("images/ic-facebook.png");
+    background-image: url('images/ic-facebook.png');
 }
 .post-container .buttons .share--twitter {
-    background-image: url("images/ic-twitter.png");
+    background-image: url('images/ic-twitter.png');
 }
 .post-container .buttons .share--telegram {
-    background-image: url("images/ic-telegram.png");
+    background-image: url('images/ic-telegram.png');
 }
 
 .lb-title {
@@ -675,7 +675,7 @@ body {
 }
 .lb-title::before {
     margin-right: 15px;
-    content: "";
+    content: '';
     width: 15px;
     border-radius: 10px;
     background-color: var(--orange);
@@ -705,7 +705,7 @@ body {
 }
 .recommend-container .item .title {
     font-size: 32px;
-    font-family: "iCiel Pony";
+    font-family: 'iCiel Pony';
     line-height: 35px;
     margin: 30px 0;
 }
@@ -935,7 +935,7 @@ body {
     align-items: center;
     margin: 50px 0;
 }
-.pagination input[type="text"] {
+.pagination input[type='text'] {
     width: 100px;
     border: solid 3px var(--orange);
     border-radius: 50px;
@@ -945,7 +945,7 @@ body {
     color: var(--brown);
 }
 .pagination .pag-ctrl {
-    background: url("images/ic-next.png") no-repeat;
+    background: url('images/ic-next.png') no-repeat;
     height: 30px;
     width: 30px;
     background-size: contain;
@@ -954,7 +954,7 @@ body {
     opacity: 0.7;
 }
 .pagination .pag-ctrl.enabled:hover {
-    background: url("images/ic-next-filled.png") no-repeat;
+    background: url('images/ic-next-filled.png') no-repeat;
     background-size: contain;
     transition: all 0.3s;
     opacity: 1;
@@ -978,7 +978,7 @@ body {
 }
 .mention-container .title {
     font-size: 40px;
-    font-family: "iCiel Pony";
+    font-family: 'iCiel Pony';
     line-height: 40px;
     text-align: center;
     margin-bottom: 35px;
@@ -990,12 +990,12 @@ body {
 .mention .swiper-ctrl {
     width: 70px;
     height: 70px;
-    background: url("images/ic-next.png") no-repeat;
+    background: url('images/ic-next.png') no-repeat;
     background-size: contain;
     cursor: pointer;
 }
 .mention .swiper-ctrl:hover {
-    background: url("images/ic-next-filled.png") no-repeat;
+    background: url('images/ic-next-filled.png') no-repeat;
     background-size: contain;
     transition: all 0.3s;
 }
@@ -1030,7 +1030,7 @@ body {
 .contact .title {
     width: 40%;
     font-size: 52px;
-    font-family: "iCiel Pony";
+    font-family: 'iCiel Pony';
     line-height: 52px;
     align-self: flex-start;
 }

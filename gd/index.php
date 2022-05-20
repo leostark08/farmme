@@ -15,16 +15,33 @@
             <img id="frame" src="images/frame.png" alt="">
             <div class="images" id="image1">
                 <div class="zoom_outer">
-                    <div id="zoom">
+                    <div class="zoom">
+                        <img src="https://picsum.photos/1280/720" alt="zoom">
+                    </div>
+                </div>
+            </div>
+            <div class="images" id="image2">
+                <div class="zoom_outer">
+                    <div class="zoom">
                         <img src="https://picsum.photos/1280/720" alt="zoom">
                     </div>
                 </div>
             </div>
         </div>
-        <form id="formImg1" action="upload.php" method="post" enctype="multipart/form-data">
-            Select image to upload:
-            <input id="pickImg1" type="file" name="fileupload" id="fileupload">
-            <input id="uploadImg1" type="submit" value="Upload Image" name="submit">
+        <form id="formImg1" action="generate-image.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input id="pickImg1" type="file" name="fileupload" id="fileupload" data-image="image1">
+                <input id="uploadImg1" type="submit" value="Upload Image 1" name="submit">
+                <input type="hidden" name="image1">
+                <input type="hidden" class="imageUrl" name="imageUrl1">
+            </div>
+            <div class="form-group">
+                <input id="pickImg2" type="file" name="fileupload" id="fileupload" data-image="image2">
+                <input id="uploadImg2" type="submit" value="Upload Image 2" name="submit">
+                <input type="hidden" name="image2">
+                <input type="hidden" class="imageUrl" name="imageUrl2">
+            </div>
+            <input type="submit" value="Download Image" id="download-image">
         </form>
 
     </div>

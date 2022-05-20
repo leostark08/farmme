@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'iCiel Pony';
+    src: url('fonts/iCiel-Pony.ttf');
+}
+:root {
+    --brown: #794821;
+    --aqua: #85ede4;
+    --orange: #efab17;
+    --grey: #e5e5e5;
+    --recommend-bg: rgba(121, 72, 33, 0.05);
+    --semi-bold: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    color: var(--brown);
+}
+
+.hero {
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 50px 30px 0 30px;
+    height: 540px;
+}
+.hero .decor {
+    width: 100%;
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+}
+.hero .decor > * {
+    width: 50%;
+}
+.hero .decor__desc {
+    padding-right: 100px;
+}
+.hero img {
+    width: 100%;
+}
+.hero .decor__desc p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.hero a {
+    outline: 0;
+    text-decoration: none;
+    width: fit-content;
+    position: absolute;
+    left: 60px;
+    bottom: 100px;
+}
+.hero a span {
+    padding: 10px 20px;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    color: var(--brown);
+    font-family: 'iCiel Pony';
+    border-radius: 20px;
+    line-height: 30px;
+    transition: 0.5s;
+    cursor: pointer !important;
+    background-color: var(--orange);
+    border: none;
+    padding: 20px;
+}
+.decor__desc .decor--center {
+    display: none;
+}
+
+.filter-container {
+    max-width: 1180px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-container h2 {
+    font-family: 'iCiel Pony';
+    font-size: 44px;
+}
+.filter-container .filters {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.filter-container .filters > div {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+}
+.filter-container .filters label {
+    font-size: 18px;
+    font-weight: bold;
+}
+.filter-container .filters select {
+    border: solid 1px var(--brown);
+    color: var(--brown);
+    padding: 0px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.positions {
+    width: 100%;
+    margin-top: 50px;
+}
+.positions .pst {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.pst__info .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.pst__info .short {
+    display: flex;
+    font-size: 18px;
+    font-weight: var(--semi-bold);
+}
+.pst__info .short > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.pst__info .short > div::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+.pst__info .short__location::before {
+    background: url('images/ic-location.png') no-repeat center center;
+}
+.pst__info .short__department::before {
+    background: url('images/ic-building.png') no-repeat center center;
+}
+.positions .pst a {
+    text-decoration: none;
+    color: var(--brown);
+    background-color: var(--orange);
+    height: fit-content;
+    font-weight: bold;
+    padding: 15px 30px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 1023px) {
+    .decor {
+        align-items: center;
+    }
+    .hero a {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+    }
+    .hero a span {
+        font-size: 25px;
+    }
+    .hero .decor__desc p {
+        font-size: 15px;
+    }
+    .filters {
+        flex-direction: column;
+    }
+    .filters .label {
+        width: 30%;
+    }
+    .filters select {
+        flex-grow: 1;
+    }
+    .filter-container .filters > div {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        padding: 20px;
+    }
+    .decor {
+        display: flex;
+        flex-direction: column;
+    }
+    .decor__desc .decor--center {
+        display: block;
+    }
+    .decor__desc .decor--left {
+        display: none;
+    }
+    .hero .decor img {
+        width: 50%;
+    }
+    .hero .decor__desc {
+        width: 100%;
+        padding-right: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .hero .decor img {
+        width: 100%;
+    }
+}

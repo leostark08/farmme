@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .flex {
     display: flex;
 }
@@ -11,12 +14,15 @@
     width: 100%;
 }
 
-input[type="file"] {
+input[type='file'] {
     display: none;
 }
-
-input[type="submit"] {
-    width: 120px;
+.buttons {
+    margin: 50px 0 0 50px;
+}
+button {
+    padding: 0 10px;
+    min-width: 120px;
     height: 45px;
     background-color: #49ad97;
     color: #fff;
@@ -25,23 +31,24 @@ input[type="submit"] {
     border: none;
     margin-bottom: 20px;
     cursor: pointer;
+    font-size: 13px;
+    width: max-content;
 }
-#download-image {
+.btn-download {
     background-color: #efab17;
 }
 
-#image1 {
+#image-1 {
     position: absolute;
     z-index: 2;
     overflow: hidden;
 }
-#image2 {
+#image-2 {
     position: absolute;
     z-index: 3;
     overflow: hidden;
 }
-#image1 img,
-#image2 img {
+.child-image img {
     width: 100%;
 }
 
@@ -52,7 +59,12 @@ input[type="submit"] {
     transform: scale(1) translate(0px, 0px);
     cursor: grab;
 }
-div.zoom > img {
+.zoom {
     width: 100%;
     height: auto;
+    display: none;
+}
+
+.child-image.in .zoom {
+    display: block;
 }
